@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.dsandberg.abxtester.MainActivity$PlaceholderFragment" >
+
+<TextView 
+    android:id="@+id/title_text1"
+  	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1. Listen to A and B. "
+/>    
+<TextView 
+    android:id="@+id/test_round_text"
+  	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:textStyle="bold"
+/>  
+
+     
+
+<Button 
+    android:id="@+id/a_btn"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title_text1"
+    android:text="A"
+    android:clickable="true"
+/>
+
+<Button 
+    android:id="@+id/b_btn"
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title_text1"
+    android:text="B"
+    android:layout_toRightOf="@id/a_btn"
+    android:clickable="true"
+/>
+
+<TextView 
+    android:id="@+id/title_text2"
+  	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/a_btn"
+    android:text="2. Listen to each X and choose which sound (A or B) it is most similar to. "
+/>   
+
+<ScrollView
+ 	android:id="@+id/scroll_view"
+ 	android:layout_below="@id/title_text2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ >
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <com.dsandberg.abxtester2016.XbuttonLayout
+                android:id="@+id/xbuttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xbuttons"
+                android:text="@string/next_round"
+                android:clickable="true"
+                android:layout_marginTop="40px"
+                />
+    </LinearLayout>
+
+</ScrollView>
+
+    
+</RelativeLayout>

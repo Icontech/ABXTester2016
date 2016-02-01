@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+ >
+
+<TextView 
+    android:id="@+id/result_title_text"
+  	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   	android:textSize="20dp"
+/>    
+
+<TextView 
+    android:id="@+id/result_text"
+  	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/result_title_text"
+   	android:textSize="20dp"
+/>  
+
+<ScrollView 
+    android:id="@+id/result_scroll"
+	 	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/result_text"
+>
+<TextView 
+    android:id="@+id/detailed_result_text"
+  	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/result_text"
+   	android:textSize="10dp"
+   	android:layout_marginTop="20dp"
+/>  
+
+
+</ScrollView>
+<Button 
+    android:id="@+id/email_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/result_scroll"
+    android:text="@string/send_results"
+    android:clickable="true"
+    />
+
+</RelativeLayout>
