@@ -1,5 +1,7 @@
 # ABXTester2016
-Configurable ABX test for Android. Convenient when you want to check if a user can determine if an unknown sound (X) is the same as a reference sound (A or B).
+Configurable ABX test for Android. Convenient when you want to check if a user can determine if an unknown sound (X) is the same as a reference sound (A or B). 
+
+The app was originally developed as a school project for a course in Music Acoustics at KTH in Stockholm, Sweden. It has since been revised and made more configurable (2016). 
 
 Thank you for using the ABX Tester 2016!
 If you are unfamiliar with the purpose of an ABX test, please have a look at
